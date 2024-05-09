@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+
+  box-sizing: border-box;
+}
+
+:root {
+  --grey: #f4f4f4;
+  --black: #000;
+  --dark-medium: #353535;
+  --white: #fff;
+  --ligth-black: #232323;
+  --purple: #5d47e9;
+  --mint: #e4f6ff;
+  --green: #d3ff24;
+}
+
+* {
+  @apply md:text-sm text-base font-light;
+}
+
+.button {
+  @apply rounded-xl px-10 py-4 text-slate-50 bg-purple w-min whitespace-nowrap;
+}
+
+.big-title {
+  @apply text-5xl font-bold;
+}
+
+.title {
+  @apply font-bold text-2xl md:text-xl;
+}
+
+.section {
+  @apply md:px-[100px] py-[40px] px-[50px];
+}
+
+.bubble {
+  @apply bg-black w-[150px] h-[150px] text-white text-xs rounded-full px-4 py-2 flex justify-center items-center relative;
+}
+
+.bubble::after {
+  content: "";
+  position: absolute;
+  left: 70%;
+  top: 90%;
+  transform: translateX(-70%) rotate(90deg);
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 20px solid black;
+  border-top-right-radius: 5px;
+  overflow: hidden;
+}
