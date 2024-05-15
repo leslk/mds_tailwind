@@ -7,18 +7,19 @@
     <link
       href="https://fonts.googleapis.com/css?family=Plus+Jakarta+Sans:200,300,400,500,600,700,800,200i,300i,400i,500i,600i,700i,800i&display=swap"
     />
+    <script src="https://kit.fontawesome.com/cbfc23503c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/output.css" />
   </head>
   <body>
-    <header class="bg-purple section">
-      <section class="bg-white rounded-xl grid grid-col sm:grid-cols-2 relative">
+    <header class="header">
+      <section class="header-section">
         <div class="flex flex-col gap-8 p-12">
           <div
-            class="px-10 absolute w-full flex gap-12 justify-between top-0 right-0 p-4"
+            class="px-6 py-8 sm:px-10 bg-grey sm:bg-transparent absolute w-full flex gap-1 justify-between top-0 right-0 sm:p-4"
           >
             <p class="title">LearnM5</p>
             <nav
-              class="flex justify-between items-center md:gap-10 gap-6 bg-grey rounded-full px-6"
+              class="sm:justify-between sm:items-center md:gap-10 gap-6 bg-grey rounded-full px-6 hidden sm:flex"
             >
               <a href="#">Home</a>
               <a href="#">Features</a>
@@ -28,6 +29,11 @@
               <a href="#">help</a>
               <a href="#">Contact</a>
             </nav>
+            <div class="flex sm:hidden flex-col justify-center items-center">
+              <div class="w-8 h-[3px] bg-black"></div>
+              <div class="w-8 h-[3px] mt-[5px] bg-black"></div>
+              <div class="w-8 h-[3px] mt-[5px] bg-black"></div>
+            </div>
           </div>
           <h1 class="big-title pt-10">Online Spanish courses</h1>
           <div class="flex flex-col gap-2">
@@ -44,7 +50,7 @@
           </div>
         </div>
         <img
-          class="w-full h-full object-cover rounded-b-xl sm:rounded-r-xl"
+          class="w-full h-full object-cover rounded-b-xl sm:rounded-bl-none sm:rounded-r-xl"
           src="./assets/img/1.jpg"
           alt="Spanish street"
         />
@@ -53,11 +59,11 @@
     <main>
       <section class="section flex flex-col gap-8">
         <h2 class="big-title text-center">Our Features</h2>
-        <div class="grid grid-col sm:grid-cols-4 gap-8">
-          <div class="border border-black">
-            <div class="p-4 flex flex-col gap-4">
+        <div class="rows-section">
+          <div class="border-black-card">
+            <div class="border-black-card__content">
               <p
-                class="w-[25px] h-[25px] rounded-full bg-mint flex justify-center items-center"
+                class="numbers"
               >
                 1
               </p>
@@ -68,15 +74,15 @@
               </p>
             </div>
             <img
-              class="object-cover w-full h-[150px]"
+              class="border-black-card__img"
               src="./assets/img/2.jpg"
               alt="Spanish street"
             />
           </div>
-          <div class="border border-black">
-            <div class="p-4 flex flex-col gap-4">
+          <div class="border-black-card">
+            <div class="border-black-card__content">
               <p
-                class="w-[25px] h-[25px] rounded-full bg-mint flex justify-center items-center"
+                class="numbers"
               >
                 2
               </p>
@@ -87,15 +93,15 @@
               </p>
             </div>
             <img
-              class="object-cover w-full h-[150px]"
+              class="border-black-card__img"
               src="./assets/img/3.jpg"
               alt="Spanish street"
             />
           </div>
-          <div class="border border-black">
-            <div class="p-4 flex flex-col gap-4">
+          <div class="border-black-card">
+            <div class="border-black-card__content">
               <p
-                class="w-[25px] h-[25px] rounded-full bg-mint flex justify-center items-center"
+                class="numbers"
               >
                 3
               </p>
@@ -106,15 +112,15 @@
               </p>
             </div>
             <img
-              class="object-cover w-full h-[150px]"
+              class="border-black-card__img"
               src="./assets/img/4.jpg"
               alt="Spanish street"
             />
           </div>
-          <div class="border border-black">
-            <div class="p-4 flex flex-col gap-4">
+          <div class="border-black-card">
+            <div class="border-black-card__content">
               <p
-                class="w-[25px] h-[25px] rounded-full bg-mint flex justify-center items-center"
+                class="numbers"
               >
                 4
               </p>
@@ -125,7 +131,7 @@
               </p>
             </div>
             <img
-              class="object-cover w-full h-[150px]"
+              class="border-black-card__img"
               src="./assets/img/5.jpg"
               alt="Spanish street"
             />
@@ -134,43 +140,46 @@
       </section>
       <section class="section flex flex-col gap-8 bg-purple text-white">
         <div class="flex justify-center items-center">
-          <div class="bubble">
-            <p class="big-title">Go !</p>
+          <div class="bubble relative">
+            <p class="big-title">go !</p>
+            <svg class="absolute" xmlns="http://www.w3.org/2000/svg" width="224" height="211" viewBox="0 0 224 211" fill="none">
+              <path d="M162.277 181.045C163.518 185.512 158.536 189.116 154.681 186.54L128.633 169.134L153.892 150.859L162.277 181.045Z" fill="black"></path>
+            </svg>
           </div>
         </div>
-        <div class="grid grid-col sm:grid-cols-4 gap-6">
-          <div class="border border-white flex flex-col gap-4 rounded-xl items-center sm:items-start px-8 py-4">
+        <div class="rows-section">
+          <div class="border-white-card">
             <p class="big-title">136</p>
             <p>Unique<br />Colors</p>
           </div>
-          <div class="border border-white px-8 py-4 flex flex-col gap-4 rounded-xl items-center sm:items-start">
+          <div class="border-white-card">
             <p class="big-title">117</p>
             <p>Super<br />Professeurs</p>
           </div>
-          <div class="border border-white px-8 py-4 flex flex-col gap-4 rounded-xl items-center sm:items-start">
+          <div class="border-white-card">
             <p class="big-title">734</p>
             <p>Etudiante.es<br />Satissfait.es</p>
           </div>
-          <div class="border border-white px-8 py-4 flex flex-col gap-4 rounded-xl items-center sm:items-start">
+          <div class="border-white-card">
             <p class="big-title">346</p>
             <p>Diplômes<br />Obtenus</p>
           </div>
         </div>
       </section>
     </main>
-    <footer class="section bg-black text-white">
-      <div class="grid grid-col sm:grid-cols-4 gap-8 pb-[100px] border-b border-b-white">
-        <div class="flex flex-col gap-4 items-center sm:items-start">
+    <footer class="footer bg-black text-white">
+      <div class="rows-section sm:pb-[100px] pb-[30px] border-b border-b-white">
+        <div class="footer-section">
           <p class="font-bold">+1(234)567-89_01</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
-        <div class="flex flex-col gap-4 items-center sm:items-start">
+        <div class="footer-section">
           <p class="text-center sm:text-start">
             Copyright 2024 B1 MDS <br />
             All rights reserved
           </p>
         </div>
-        <div class="flex flex-col gap-4 items-center sm:items-start">
+        <div class="footer-section">
           <p class="font-bold">Features</p>
           <div class="flex flex-col items-center sm:items-start">
             <p>About</p>
@@ -179,7 +188,7 @@
             <p>Team</p>
           </div>
         </div>
-        <div class="flex flex-col gap-4 items-center sm:items-start">
+        <div class="footer-section">
           <p class="font-bold">Info</p>
           <div class="flex flex-col items-center sm:items-start">
             <p>About</p>
@@ -189,7 +198,7 @@
           </div>
         </div>
       </div>
-      <div class="grid grid-col sm:grid-cols-3 text-center gap-8 pt-10">
+      <div class="grid sm:grid-cols-3 text-center gap-4 pt-10">
         <p>© Copyright 2024</p>
         <p>superemail@gmail.com</p>
         <p>Fait par une class badass</p>

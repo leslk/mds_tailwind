@@ -23,7 +23,7 @@
 }
 
 * {
-  @apply md:text-sm text-base font-light;
+  @apply md:text-base text-sm font-light;
 }
 
 .button {
@@ -38,23 +38,50 @@
   @apply font-bold text-2xl md:text-xl;
 }
 
+.header {
+  @apply md:px-[80px] sm:py-[40px] sm:px-[50px] bg-purple relative p-5;
+}
+
+.header-section {
+  @apply bg-white rounded-xl grid sm:grid-cols-2 sm:relative;
+}
+
 .section {
-  @apply md:px-[100px] py-[40px] px-[50px];
+  @apply md:px-[80px] sm:py-[40px] sm:px-[50px] py-[30px] px-[80px];
 }
 
 .bubble {
   @apply bg-black w-[150px] h-[150px] text-white text-xs rounded-full px-4 py-2 flex justify-center items-center relative;
 }
 
-.bubble::after {
-  content: "";
-  position: absolute;
-  left: 70%;
-  top: 90%;
-  transform: translateX(-70%) rotate(90deg);
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
-  border-top: 20px solid black;
-  border-top-right-radius: 5px;
-  overflow: hidden;
+.rows-section {
+  @apply grid sm:grid-cols-4 gap-8;
+}
+
+.numbers {
+  @apply w-[25px] h-[25px] rounded-full bg-mint flex justify-center items-center font-bold;
+}
+
+.border-black-card {
+  @apply border border-black flex flex-col justify-between;
+}
+
+.border-black-card__img {
+  @apply object-cover w-full h-[180px] sm:h-[150px];
+}
+
+.border-black-card__content {
+  @apply p-8 sm:p-4 flex flex-col gap-4;
+}
+
+.border-white-card {
+  @apply border border-white flex flex-col gap-4 rounded-xl items-center sm:items-start px-8 py-6;
+}
+
+.footer-section {
+  @apply flex flex-col gap-4 items-center sm:items-start;
+}
+
+.footer {
+    @apply md:px-[80px] sm:py-[40px] sm:px-[50px] py-[30px]; 
 }
